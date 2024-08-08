@@ -1,4 +1,4 @@
-package com.zerobase.api.load.request
+package com.zerobase.api.loan.request
 
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.PostMapping

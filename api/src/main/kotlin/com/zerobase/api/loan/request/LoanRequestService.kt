@@ -1,4 +1,4 @@
-package com.zerobase.api.load.request
+package com.zerobase.api.loan.request
 
 import com.zerobase.domain.domain.UserInfo
 

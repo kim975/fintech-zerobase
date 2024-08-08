@@ -1,4 +1,4 @@
-package com.zerobase.api.load.encrypt
+package com.zerobase.api.loan.encrypt
 
 import org.springframework.stereotype.Component
 import java.util.*

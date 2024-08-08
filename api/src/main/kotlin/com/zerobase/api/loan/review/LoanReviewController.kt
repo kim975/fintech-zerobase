@@ -1,4 +1,4 @@
-package com.zerobase.api.load.review
+package com.zerobase.api.loan.review
 
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.GetMapping

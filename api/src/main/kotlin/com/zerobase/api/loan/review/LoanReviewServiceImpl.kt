@@ -1,4 +1,4 @@
-package com.zerobase.api.load.review
+package com.zerobase.api.loan.review
 
 import com.zerobase.domain.repository.LoanReviewRepository
 import org.springframework.stereotype.Service

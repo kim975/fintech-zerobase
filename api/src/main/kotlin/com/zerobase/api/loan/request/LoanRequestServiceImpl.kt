@@ -1,7 +1,7 @@
-package com.zerobase.api.load.request
+package com.zerobase.api.loan.request
 
-import com.zerobase.api.load.GenerateKey
-import com.zerobase.api.load.encrypt.EncryptComponent
+import com.zerobase.api.loan.GenerateKey
+import com.zerobase.api.loan.encrypt.EncryptComponent
 import com.zerobase.domain.repository.UserInfoRepository
 import org.springframework.stereotype.Service
 

@@ -1,9 +1,9 @@
-package com.zerobase.api.load.request
+package com.zerobase.api.loan.request
 
 import com.fasterxml.jackson.databind.ObjectMapper
 import com.fasterxml.jackson.module.kotlin.KotlinModule
-import com.zerobase.api.load.GenerateKey
-import com.zerobase.api.load.encrypt.EncryptComponent
+import com.zerobase.api.loan.GenerateKey
+import com.zerobase.api.loan.encrypt.EncryptComponent
 import com.zerobase.domain.domain.UserInfo
 import com.zerobase.domain.repository.UserInfoRepository
 import io.mockk.every
@@ -11,7 +11,6 @@ import io.mockk.mockk
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.DisplayName
 import org.junit.jupiter.api.Test
-import org.mockito.ArgumentMatchers.any
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest
 import org.springframework.boot.test.mock.mockito.MockBean
 import org.springframework.http.MediaType

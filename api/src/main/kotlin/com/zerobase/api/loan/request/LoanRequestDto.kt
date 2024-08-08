@@ -1,6 +1,4 @@
-package com.zerobase.api.load.request
-
-import kotlin.jvm.internal.Ref.LongRef
+package com.zerobase.api.loan.request
 
 class LoanRequestDto {
 
