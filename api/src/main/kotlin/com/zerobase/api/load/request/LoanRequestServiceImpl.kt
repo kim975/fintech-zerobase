@@ -30,6 +30,6 @@ class LoanRequestServiceImpl(
         userInfoRepository.save(userInfoDto.toEntity())
 
     override fun loadRequestReview(userKey: String) {
-        TODO("Not yet implemented")
+
     }
 }
