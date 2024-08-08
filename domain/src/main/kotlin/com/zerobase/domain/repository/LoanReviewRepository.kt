@@ -5,5 +5,5 @@ import org.springframework.data.jpa.repository.JpaRepository
 import java.util.*
 
 interface LoanReviewRepository : JpaRepository<LoanReview, Long> {
-    fun findByUserKey(userKey: String): LoanReview
+    fun findByUserKey(userKey: String): LoanReview?
 }
