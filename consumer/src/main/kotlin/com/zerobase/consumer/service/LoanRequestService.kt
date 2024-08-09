@@ -6,7 +6,6 @@ import com.zerobase.domain.repository.LoanReviewRepository
 import com.zerobase.kafka.dto.LoanRequestDto
 import org.springframework.boot.web.client.RestTemplateBuilder
 import org.springframework.stereotype.Service
-import org.springframework.web.client.RestTemplate
 import java.time.Duration
 
 @Service
@@ -15,7 +14,7 @@ class LoanRequestService(
 ) {
 
     companion object {
-        const val cssUrl = "http://localhost:8081/css/api/v1/request"
+        const val nginxUrl = "http://nginx:8085/css/api/v1/request"
     }
 
     fun loanRequest(loanRequestDto: LoanRequestDto) {
@@ -29,7 +28,7 @@ class LoanRequestService(
             .setReadTimeout(Duration.ofMillis(1000))
             .build()
 
-        return restTemplate.postForObject(cssUrl, loanRequestDto, ReviewResponseDto::class.java)!!
+        return restTemplate.postForObject(nginxUrl, loanRequestDto, ReviewResponseDto::class.java)!!
     }
 
     fun saveLoanReviewData(loanReview: LoanReview) = loanReviewRepository.save(loanReview)

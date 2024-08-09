@@ -1,3 +1,5 @@
+import org.springframework.boot.gradle.tasks.bundling.BootJar
+
 plugins {
     kotlin("jvm") version "1.9.24"
     kotlin("plugin.spring") version "1.9.24" apply false
@@ -54,6 +56,40 @@ subprojects {
         testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
         testRuntimeOnly("org.junit.platform:junit-platform-launcher")
     }
+}
+
+project(":api") {
+    dependencies {
+        implementation(project(":domain"))
+        implementation(project(":kafka"))
+    }
+}
+
+project(":consumer") {
+    dependencies {
+        implementation(project(":domain"))
+        implementation(project(":kafka"))
+    }
+}
+
+project(":css") {
+
+}
+
+project(":domain") {
+    val jar: Jar by tasks
+    val bootJar: BootJar by tasks
+
+    bootJar.enabled = false
+    jar.enabled = true
+}
+
+project(":kafka") {
+    val jar: Jar by tasks
+    val bootJar: BootJar by tasks
+
+    bootJar.enabled = false
+    jar.enabled = true
 }
 
 //dependencies {

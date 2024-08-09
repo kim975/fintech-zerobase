@@ -15,7 +15,7 @@ import org.springframework.kafka.core.*
 class KafkaConfig {
 
     companion object{
-        const val bootstrapServer = "192.168.56.102:9092"
+        const val bootstrapServer = "kafka:9092"
     }
 
     @Bean
