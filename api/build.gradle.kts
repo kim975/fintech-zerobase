@@ -11,6 +11,7 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.6.0")
     implementation(project(":domain"))
+    implementation(project(":kafka"))
 
     testImplementation("io.mockk:mockk:1.12.0")
     runtimeOnly("com.h2database:h2")

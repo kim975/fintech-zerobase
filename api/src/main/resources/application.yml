@@ -2,3 +2,6 @@ spring:
   profiles:
     include:
       - domain
+
+server:
+  port: 80
